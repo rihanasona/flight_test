@@ -7,7 +7,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="0e3225a1-6885-405d-bffb-612360567ae4" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="gittestFlow" doc:id="d83d842b-0381-4e24-8d0d-d2ad23b8f063" >
+	<flow name="gittestFlows" doc:id="d83d842b-0381-4e24-8d0d-d2ad23b8f063" >
 		<http:listener doc:name="Listener" doc:id="fb45991d-97d1-445a-99f9-94206d820812" config-ref="HTTP_Listener_config" path="/git"/>
 		<set-payload value="test git" doc:name="Set Payload" doc:id="4ae29510-83fe-4784-aee3-695bcf1036c9" />
 	</flow>
